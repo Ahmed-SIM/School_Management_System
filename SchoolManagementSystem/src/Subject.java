@@ -1,6 +1,18 @@
 public class Subject {
+    private String subjectId;
+    private String subjectName;
     private Array<String> subjects;
+    public Subject(String subjectId, String subjectName) {
+        this.subjectId = subjectId;
+        this.subjectName = subjectName;
+    }
 
+    public String getSubjectName() {
+        return subjectName;
+    }
+    public String getSubjectId(){
+        return subjectId;
+    }
     public Subject(int size) {
         subjects = new Array<>(size);
     }
